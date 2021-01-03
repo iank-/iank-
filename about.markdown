@@ -1,7 +1,8 @@
 ---
-layout: page
-title: About
-permalink: /about/
+title: About Me
+link: /about/
+tags:
+  - about
 ---
 
 Welcome to my page. I'm a software engineer and aspiring UX professional.
