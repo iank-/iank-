@@ -27,7 +27,7 @@ twitter_username: jekyllrb
 github_username:  iank-
 
 # Build settings
-remote_theme: dirkfabisch/mediator
+#remote_theme: dirkfabisch/mediator
 plugins:
   - jekyll-feed
 
