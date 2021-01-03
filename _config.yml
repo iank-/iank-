@@ -31,10 +31,34 @@ repository: iank-/iank-.github.io
 #theme: minima
 
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
+minimal_mistakes_skin: contrast # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
 
 plugins:
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  # github included
+  # https://github.com/github/pages-gem/blob/master/lib/github-pages/dependencies.rb
+  - jekyll-avatar
   - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+  # github whitelisted
+  # https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb
   - jekyll-include-cache
+  - jekyll-octicons
 
 defaults:
   # _posts
@@ -51,7 +75,21 @@ defaults:
       share: true
       toc: true
 
-
+author:
+  name: ian kaebery
+  avatar: /assets/images/avatar.jpg
+  bio: Professional Engineer in Calgary, Canada.
+  location: Canada
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:ian.k@me.com
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/iankaebery
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/iank-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
