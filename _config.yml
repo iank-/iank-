@@ -51,4 +51,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: minima
+theme: jekyll-theme-slate
