@@ -18,12 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ian kaebery
+title: ik
 email: ian.k@me.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: ""
 github_username:  iank-
 repository: iank-/iank-.github.io
 
@@ -31,7 +28,7 @@ repository: iank-/iank-.github.io
 #theme: minima
 
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
-minimal_mistakes_skin: "neon" # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+minimal_mistakes_skin: "contrast" # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 
 plugins:
@@ -69,27 +66,27 @@ defaults:
       categories: [blog]
       layout: single
       author_profile: true
-      comments: true
-      read_time: true
-      related: true
+      comments: false
+      read_time: false
+      related: false
       share: true
       toc: true
 
 author:
-  name: ian kaebery
-  avatar: /assets/images/avatar.jpg
-  bio: Professional Engineer in Calgary, Canada.
-  location: Canada
+  name: "ian kaebery"
+  avatar: "assets/img/avatar.jpg"
+  bio: "Professional Engineer in Calgary, Canada."
   links:
-    - label: Email
-      icon: fas fa-fw fa-envelope
-      url: mailto:ian.k@me.com
-    - label: LinkedIn
-      icon: fab fa-fw fa-linkedin
-      url: https://linkedin.com/in/iankaebery
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: https://github.com/iank-
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:ian.k@me.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/iankaebery"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/iank-"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
