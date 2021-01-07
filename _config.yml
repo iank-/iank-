@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: ik
-email: ian.k@me.com
+email:
 description: ""
 github_username:  iank-
 repository: iank-/iank-.github.io
@@ -30,6 +30,10 @@ repository: iank-/iank-.github.io
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 minimal_mistakes_skin: "contrast" # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 
 plugins:
   - jekyll-coffeescript
@@ -55,37 +59,36 @@ plugins:
   # github whitelisted
   # https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb
   - jekyll-include-cache
-  - jekyll-octicons
 
-defaults:
-  # _posts
-  - scope:
-      path: _posts
-      type: posts
-    values:
-      categories: [blog]
-      layout: single
-      author_profile: true
-      comments: false
-      read_time: false
-      related: false
-      share: true
-      toc: false
+#defaults:
+#  # _posts
+#  - scope:
+#      path: _posts
+#      type: posts
+#    values:
+#      layout: single
+#      author_profile: true
+#      comments: false
+#      read_time: false
+#      related: false
+#      share: true
+#      toc: false
+
 
 author:
-  name: "ian kaebery"
-  avatar: "assets/img/avatar.jpg"
-  bio: "Professional Engineer in Calgary, Canada."
+  name   : "ian kaebery"
+  avatar : "assets/img/avatar.jpg"
+  bio    : "Professional Engineer in Calgary, Canada."
   links:
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:ian.k@me.com"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/iankaebery"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.iank.ca"
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/iank-"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/iankaebery"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -106,3 +109,37 @@ author:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+
+######### new
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
