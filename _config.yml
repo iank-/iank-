@@ -79,16 +79,24 @@ author:
   name   : "ian kaebery"
   avatar : "assets/img/avatar.jpg"
   bio    : "Professional Engineer in Calgary, Canada."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.iank.ca"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/iank-"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/iankaebery"
+  #links:
+  #  - label: "Website"
+  #    icon: "fas fa-fw fa-link"
+  #    url: "https://www.iank.ca"
+  #  - label: "GitHub"
+  #    icon: "fab fa-fw fa-github"
+  #    url: "https://github.com/iank-"
+  #  - label: "LinkedIn"
+  #    icon: "fab fa-fw fa-linkedin"
+  #    url: "https://linkedin.com/in/iankaebery"
+
+sidebar:
+  - title: "Title"
+    image: http://placehold.it/350x250
+    image_alt: "image"
+    text: "Some text here."
+  - title: "Another Title"
+    text: "More text here."
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -134,12 +142,5 @@ defaults:
       author_profile: true
 
 category_archive:
-  type: jekyll-archives
+  type: liquid
   path: /categories/
-jekyll-archives:
-  enabled:
-    - categories
-  layouts:
-    category: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
